@@ -1,4 +1,4 @@
-name: Deployment Exercise 2
+name: Deployment Exercise 2      
 on: push
 jobs:
   lint:
@@ -21,7 +21,6 @@ jobs:
       - name: Test code
         run: npm run test
   deploy:
-    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Get code
